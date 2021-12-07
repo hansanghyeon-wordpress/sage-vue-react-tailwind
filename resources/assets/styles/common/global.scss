@@ -1,0 +1,12 @@
+body {
+  @apply font-sans;
+
+  #app {
+    min-height: 100vh;
+    @apply grid grid-rows-[1fr,auto];
+  }
+}
+
+.brand {
+  @apply text-3xl font-medium text-indigo-500;
+}
