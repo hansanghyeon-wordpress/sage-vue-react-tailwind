@@ -24,8 +24,11 @@
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2",
     "@tailwindcss/typography": "^0.4.1",
+    "@tinypixelco/laravel-mix-wp-blocks": "^1.1.0",
     "@vue/compiler-sfc": "^3.2.24",
+    "@wordpress/babel-preset-default": "^6.4.1",
     "@wordpress/browserslist-config": "^2.6.0",
+    "@wordpress/dependency-extraction-webpack-plugin": "^3.2.1",
     "babel-eslint": "^10.0.3",
     "browser-sync": "^2.26",
     "browser-sync-webpack-plugin": "2.2",

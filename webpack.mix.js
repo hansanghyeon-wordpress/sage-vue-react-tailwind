@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 require('laravel-mix-purgecss');
+require('@tinypixelco/laravel-mix-wp-blocks');
 
 // Public path helper
 
@@ -28,7 +29,10 @@ mix.sass(src`styles/app.scss`, 'styles');
 
 // JavaScript
 mix.js(src`scripts/app.js`, 'scripts').vue();
-mix.js(src`scripts/customizer.js`, 'scripts').extract();
+mix
+  .js(src`scripts/customizer.js`, 'scripts')
+  .blocks(src`scripts/editor.js`, 'scripts')
+  .extract();
 
 // Autoload
 mix.autoload({
